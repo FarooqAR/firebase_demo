@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Firebase.setAndroidContext(this);
-
+        mUsers = new ArrayList<>();
         final Firebase users = ref.child("users");
 
         listView = (ListView) findViewById(R.id.listView);
